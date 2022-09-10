@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--WhiteBack);
+    color: var(--grey1);
+}
+
+header {
+    position: fixed;
+    top:0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey1);
+    color: var(--WhiteFixed);
+    padding: 0px 20px;
+    width: 100vw;
+    height: 75px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 160px;
+    font-size: 14px;
+}
+
+.optionNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.activeNav {
+    background-color: var(--grey2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    width: 70px;
+    height: 35px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    padding: 90px 0px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.userWindow {
+    background-color: var(--WhiteFixed);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 90%;
+    padding: 35px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.userWindow h2 {
+    font-size: 28px;
+    color: var(--BlackFixed);
+    margin-bottom: 25px;
+}
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    z-index: 2
+}
+
+.userForm input {
+    width: 100%;
+}
+
+.userForm a{
+    font-size: 12px;
+    color: var(--BlackFixed);
+}
+
+.formButton {
+    border: solid 1px var(--grey1);
+    background-color: var(--WhiteFixed);
+    color: var(--grey1);
+}
+
+.userForm button {
+    width: 100%;
+}
+
+@keyframes switcher {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media (min-width:600px) {
+    .userWindow {
+        width: 460px;
+    }
+}

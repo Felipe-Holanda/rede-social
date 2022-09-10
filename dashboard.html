@@ -12,25 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/component.css">
-    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/dashboard.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <title>TechPosters | Pagina Inicial</title>
+    <title>TechPosters | Dashboard</title>
 </head>
 
 <body>
     <header>
         <img src="./src/assets/techposters.png" alt="TechPosters Logo">
         <nav id="navBar">
-            <div class="optionNav">Login</div>
-            <div class="activeNav">Registro</div>
+            <span class="optionNav">Sair</span>
         </nav>
     </header>
     <main>
-        <div class="userWindow"></div>
+        <section id="userPost">
+        </section>
+        <section id="userList">
+            <h2>Sugestões para você seguir</h2>
+            <ul id="userCards"></ul>
+        </section>
+        <section id="postList">
+            <h2>Posts</h2>
+            <ul id="postCards"></ul>
+        </section>
     </main>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="module" src="./src/scripts/index.js"></script>
+    <script type="module" src="./src/scripts/dashboard.js"></script>
 </body>
 
 </html>

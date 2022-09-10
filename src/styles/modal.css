@@ -1,0 +1,89 @@
+#mainModal {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grey-opacity-1);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    z-index: 10;
+}
+
+.modalWindow {
+    position: relative;
+    background-color: var(--WhiteFixed);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--BlackFixed);
+    width: 90%;
+    height: 90vh;
+    overflow-x: hidden;
+    padding: 40px 25px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.postHeader>img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.postHeader>div {
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.postHeader>div>h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.postHeader>div>p {
+    color: var(--grey2);
+    top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modalWindow h2 {
+    color: var(--grey1);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.modalWindow p {
+    color: var(--BlackFixed);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#closeButton {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--grey4);
+    color: var(--grey3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#closeButton:hover {
+    background-color: var(--grey3);
+    color: var(--grey1);
+}
+#closeButton:active {
+    background-color: var(--grey3);
+    color: var(--grey1);
+}

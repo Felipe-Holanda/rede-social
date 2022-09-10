@@ -1,0 +1,354 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--WhiteBack);
+    color: var(--grey1);
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--grey1);
+    color: var(--WhiteFixed);
+    padding: 0px 20px;
+    width: 100vw;
+    height: 75px;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--WhiteFixed);
+    min-width: 60px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.optionNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 35px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.optionNav:hover {
+    background-color: var(--grey2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.optionNav:active {
+    background-color: var(--grey2);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    padding: 90px 0px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#userPost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 25px 0px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.postHeader {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.postHeader img {
+    width: 52px;
+    height: auto;
+    max-height: 52px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.postHeader div {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.postHeader h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.postHeader p {
+    color: var(--grey2);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.postHeader span {
+    color: var(--grey2);
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#newPost {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    width: 100%;
+}
+
+#newPost textarea,
+input {
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#newPost button {
+    width: 80px;
+}
+
+.buttonInactive {
+    background-color: var(--grey4);
+    color: var(--grey3);
+}
+
+#newPost button:focus {
+    background-color: var(--brand-1);
+    color: var(--WhiteFixed);
+}
+
+#userList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+#userList h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#userCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+#userCards li {
+    min-width: 300px;
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+#userCards li>img {
+    width: 52px;
+    height: auto;
+    max-height: 52px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#userCards li>div {
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#userCards li>div>h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#userCards li>div>p {
+    color: var(--grey2);
+    top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#userCards li>button {
+    position: absolute;
+    max-height: 28px;
+    bottom: 10px;
+}
+
+.followButton {
+    border: solid 1px var(--grey1);
+    background-color: var(--WhiteFixed);
+    color: var(--grey1);
+}
+
+#postList {
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+#postList h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#postCards {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+#postCards li {
+    width: 95%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#postCards li>button {
+    position: absolute;
+    max-height: 28px;
+    bottom: 10px;
+}
+
+.postHeader>div {
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.postHeader>div>h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.postHeader>div>p {
+    color: var(--grey2);
+    top: 25px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.postTitle {
+    color: var(--grey1);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.postShort {
+    color: var(--grey2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.postOptions {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+    gap: 35px;
+}
+
+.postOptions figure {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--BlackFixed);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.postOptions button {
+    background-color: var(--grey1);
+}
+
+.postOptions button:hover {
+    background-color: var(--grey0);
+}
+
+@keyframes switcher {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width:960px) {
+    header {
+        padding: 0px 40px;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+
+    main {
+        align-items: flex-start;
+    }
+    
+    #userPost {
+        width: 60%;
+        min-width: 420px;
+    }
+    
+    #userList {
+        position: fixed;
+        right: 0px;
+        top: 100px;
+        width: 420px;
+    }
+
+    #userCards {
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    #userCards li>button {
+        right:25px;
+        bottom: 35px;
+    }
+
+    #postList {
+        width: 60%;
+        min-width: 420px;
+    }
+
+}
