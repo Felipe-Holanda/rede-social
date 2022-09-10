@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^dashboard dashboard.html [NC]
+RewriteRule ^index index.html [NC]
